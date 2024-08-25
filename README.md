@@ -21,6 +21,7 @@ This assignment involves exploiting buffer overflow vulnerabilities in a C++ pro
 2. **Method 2:** `./login-j <username> <password>`
    - Exploit a buffer overflow with a hardcoded canary.
    - Submit your username and password in `a1b.txt`.
+   - Note this method is time based so won't right now but has the correct code for the provided requirements in the documents.
 
 3. **Method 3:** `./login-k <username> <password>`
    - Exploit a buffer overflow where the canary is randomized.
@@ -72,8 +73,9 @@ g++ -o login login.cpp
 ./login-k $(sed -n '1p' a1c.txt) $(sed -n '2p' a1c.txt)
 ```
 - Cryptography
-- To run on Linux
+- To run on Linux:
 ```bash
 python3 decrypt.py ciphertext
 ```
+
 
