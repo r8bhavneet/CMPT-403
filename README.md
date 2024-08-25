@@ -4,7 +4,6 @@ This repository contains solutions for three assignments focused on security vul
 
 ## Table of Contents
 - [Buffer Overflow Vulnerabilities](#buffer-overflow-vulnerabilities)
-- [Breaking Cryptography - Two-Time Pad](#breaking-cryptography---two-time-pad)
 - [Padding Oracle Attack](#padding-oracle-attack)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
@@ -60,3 +59,17 @@ This assignment focuses on exploiting a padding oracle vulnerability in AES encr
 To compile the C++ code, use the following command:
 ```bash
 g++ -o login login.cpp
+```
+
+## Usage
+
+### Description
+Buffer Overflow
+To run the buffer overflow exploits:
+
+```bash
+./login-i $(sed -n '1p' a1a.txt) $(sed -n '2p' a1a.txt)
+./login-j $(sed -n '1p' a1b.txt) $(sed -n '2p' a1b.txt)
+./login-k $(sed -n '1p' a1c.txt) $(sed -n '2p' a1c.txt)
+```
+
